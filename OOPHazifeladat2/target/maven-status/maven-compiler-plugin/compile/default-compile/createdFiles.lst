@@ -1,7 +1,9 @@
-com\mycompany\oophazifeladat2\CaesarHelper.class
 com\mycompany\oophazifeladat2\DatabaseManager.class
-com\mycompany\oophazifeladat2\OOPHazifeladat2.class
+com\mycompany\oophazifeladat2\Caesar.class
+com\mycompany\oophazifeladat2\StringUtils.class
 com\mycompany\oophazifeladat2\Person.class
 com\mycompany\oophazifeladat2\Manager.class
 com\mycompany\oophazifeladat2\Main.class
+com\mycompany\oophazifeladat2\Director.class
 com\mycompany\oophazifeladat2\Employee.class
+com\mycompany\oophazifeladat2\UserService.class

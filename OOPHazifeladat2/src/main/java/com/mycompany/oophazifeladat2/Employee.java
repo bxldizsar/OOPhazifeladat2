@@ -13,8 +13,9 @@ public class Employee extends Person {
     private int id;
     private double salary;
     private String username;
-    private String password; // FONTOS: ez itt a titkositas ELOTTI (plain) jelszo,
-                              // adatbazisba SOHA nem ez, hanem a Caesar-kodolt valtozat kerul majd
+    private String password; //  ide mar a Caesar-kodolt jelszot adjuk at,
+                             // sima szovegkent sehol nem taroljuk a jelszot
+    private String passwordTimestamp; // mikor lett a jelszo beallitva (feladat 14. pont)
 
     // a konstruktor elso dolga, hogy meghivja a Person konstruktorat
     // nekunk itt mar tobb uj mezot is ellenorizni/beallitani kell
@@ -30,6 +31,12 @@ public class Employee extends Person {
         this.salary = salary;
         this.username = username;
         this.password = password;
+    }
+
+    // UJ: a Person abstract metodusanak megirasa
+    @Override
+    public String getType() {
+        return "EMPLOYEE";
     }
 
     // Getter es Setter, az uj mezokhoz, a person gettereit atvette
@@ -64,5 +71,13 @@ public class Employee extends Person {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getPasswordTimestamp() {
+        return passwordTimestamp;
+    }
+
+    public void setPasswordTimestamp(String passwordTimestamp) {
+        this.passwordTimestamp = passwordTimestamp;
     }
 }
